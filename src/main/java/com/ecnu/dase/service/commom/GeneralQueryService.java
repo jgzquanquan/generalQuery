@@ -18,9 +18,9 @@ public abstract class GeneralQueryService {
     /**
      * 如果需要使用搜索服务，则需要通过实现这个函数完成搜索处理类的构造初始化
      *
-     * @param searchProcessorBuilder
+     * @param searchSQLService
      */
-    public abstract void initConditionSearch(SearchProcessorBuilder searchProcessorBuilder);
+    public abstract void initConditionSearch(SearchSQLService searchSQLService);
 
     public Map<String, Object> conditionSearch(String searchCondition,
                                                Integer page, Integer size) {
